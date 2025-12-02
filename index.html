@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TuNegocio · Plantilla para Emprendimientos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fuente Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- BARRA SUPERIOR -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <span>📞 11 1234-5678</span>
+      <span>✉️ contacto@tunegocio.com</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#">Ayuda</a>
+      <a href="#">Seguimiento de pedido</a>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR GENERAL -->
+  <div class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#" class="logo">
+        <div class="logo-icon">◎</div>
+        <div class="logo-text">
+          <span>TuNegocio</span>
+          <small>.WEB</small>
+        </div>
+      </a>
+
+      <form class="search">
+        <input type="text" placeholder="Buscar productos, servicios o categorías…" />
+        <button type="submit">🔍</button>
+      </form>
+
+      <div class="header-actions">
+        <button class="icon-btn" title="Mi cuenta">👤</button>
+        <button class="icon-btn" title="Favoritos">♥</button>
+        <div class="cart">
+          <button class="icon-btn" title="Carrito">🛒</button>
+          <span class="cart-amount">$0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="nav">
+      <a href="#" class="nav-link active">Inicio</a>
+      <a href="#ejemplos" class="nav-link">Ejemplos</a>
+      <a href="#beneficios" class="nav-link">Beneficios</a>
+      <a href="#mapa" class="nav-link">Ubicación</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="breadcrumb">Inicio / Plantilla para emprendedores</p>
+        <h1>Una sola web, miles de emprendimientos posibles</h1>
+        <p class="hero-subtitle">
+          Usa esta plantilla como base para vender tus servicios o productos:
+          ropa, café, barbería, estudio de tattoo, plantas, cowork y mucho más.
+          Solo cambiás textos e imágenes y ya tenés una landing profesional.
+        </p>
+        <div class="hero-actions">
+          <a href="#ejemplos" class="btn btn-primary">Ver ejemplos de emprendimientos</a>
+          <a href="#beneficios" class="btn btn-outline">Por qué usar esta plantilla</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <main class="main">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-block">
+          <h3>Tipo de emprendimiento</h3>
+          <ul class="filter-list">
+            <li><label><input type="checkbox" /> Tienda de ropa</label></li>
+            <li><label><input type="checkbox" /> Gastronomía</label></li>
+            <li><label><input type="checkbox" /> Belleza / Barbería</label></li>
+            <li><label><input type="checkbox" /> Servicios creativos</label></li>
+            <li><label><input type="checkbox" /> Otros</label></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-block">
+          <h3>Qué querés mostrar</h3>
+          <ul class="filter-list">
+            <li><label><input type="checkbox" /> Catálogo de productos</label></li>
+            <li><label><input type="checkbox" /> Turnos / reservas</label></li>
+            <li><label><input type="checkbox" /> Portfolio de trabajos</label></li>
+            <li><label><input type="checkbox" /> Info de tu local</label></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-block">
+          <h3>Objetivo de la web</h3>
+          <ul class="filter-list">
+            <li><label><input type="checkbox" /> Vender online</label></li>
+            <li><label><input type="checkbox" /> Mostrar presencia profesional</label></li>
+            <li><label><input type="checkbox" /> Conseguir contactos</label></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- ZONA DE "PRODUCTOS" (EJEMPLOS DE EMPRENDIMIENTOS) -->
+      <section class="products" id="ejemplos">
+        <header class="products-header">
+          <div>
+            <h2>Ejemplos de emprendimientos</h2>
+            <p>Así se verían distintos rubros usando la misma plantilla base.</p>
+          </div>
+        </header>
+
+        <div class="product-grid">
+          <!-- Tienda de ropa -->
+          <article class="product-card">
+            <button class="favorite-btn" title="Marcar como favorito">♡</button>
+            <div class="product-image">
+              <img src="https://source.unsplash.com/featured/?clothes,store"
+                   alt="Tienda de ropa urbana" />
+            </div>
+            <p class="product-category">Indumentaria</p>
+            <h3 class="product-title">Tienda de ropa urbana</h3>
+            <p class="product-description">
+              Catálogo de remeras, buzos y camperas, con fotos de alta calidad
+              y un diseño que resalta tus colecciones por temporada.
+            </p>
+            <p class="product-price">Ejemplo: desde $15.000 por prenda</p>
+            <button class="btn btn-full">Ver demo de tienda de ropa</button>
+          </article>
+
+          <!-- Café de especialidad -->
+          <article class="product-card">
+            <button class="favorite-btn" title="Marcar como favorito">♡</button>
+            <div class="product-image">
+              <img src="https://source.unsplash.com/featured/?coffee,shop"
+                   alt="Café de especialidad" />
+            </div>
+            <p class="product-category">Gastronomía</p>
+            <h3 class="product-title">Café de especialidad</h3>
+            <p class="product-description">
+              Mostrá tu carta, fotos del local, métodos de café y horarios.
+              Ideal para sumar reservas o pedidos para llevar.
+            </p>
+            <p class="product-price">Ejemplo: menú brunch desde $8.500</p>
+            <button class="btn btn-full">Ver demo de café</button>
+          </article>
+
+          <!-- Barbería -->
+          <article class="product-card">
+            <button class="favorite-btn" title="Marcar como favorito">♡</button>
+            <div class="product-image">
+              <img src="https://source.unsplash.com/featured/?barbershop"
+                   alt="Barbería moderna" />
+            </div>
+            <p class="product-category">Belleza</p>
+            <h3 class="product-title">Barbería moderna</h3>
+            <p class="product-description">
+              Una página para mostrar estilos de cortes, staff, precios
+              y un botón directo para reservar turno por WhatsApp.
+            </p>
+            <p class="product-price">Ejemplo: cortes desde $6.000</p>
+            <button class="btn btn-full">Ver demo de barbería</button>
+          </article>
+
+          <!-- Estudio de tattoo -->
+          <article class="product-card">
+            <button class="favorite-btn" title="Marcar como favorito">♡</button>
+            <div class="product-image">
+              <img src="https://source.unsplash.com/featured/?tattoo,studio"
+                   alt="Estudio de tatuajes" />
+            </div>
+            <p class="product-category">Servicios creativos</p>
+            <h3 class="product-title">Estudio de tatuajes</h3>
+            <p class="product-description">
+              Portfolio de trabajos, perfiles de artistas, contacto rápido
+              y secciones para explicar cuidados y estilos.
+            </p>
+            <p class="product-price">Ejemplo: tattoos pequeños desde $25.000</p>
+            <button class="btn btn-full">Ver demo de tattoo</button>
+          </article>
+
+          <!-- Vivero / Plantas -->
+          <article class="product-card">
+            <button class="favorite-btn" title="Marcar como favorito">♡</button>
+            <div class="product-image">
+              <img src="https://source.unsplash.com/featured/?plants,shop"
+                   alt="Vivero y plantas" />
+            </div>
+            <p class="product-category">Hogar y deco</p>
+            <h3 class="product-title">Vivero y tienda de plantas</h3>
+            <p class="product-description">
+              Muestra variedades de plantas, macetas, kits y tips de cuidado
+              para que tu vivero se destaque en la web.
+            </p>
+            <p class="product-price">Ejemplo: plantas desde $4.000</p>
+            <button class="btn btn-full">Ver demo de vivero</button>
+          </article>
+
+          <!-- Cowork / Estudio creativo -->
+          <article class="product-card">
+            <button class="favorite-btn" title="Marcar como favorito">♡</button>
+            <div class="product-image">
+              <img src="https://source.unsplash.com/featured/?coworking,office"
+                   alt="Espacio de coworking" />
+            </div>
+            <p class="product-category">Servicios</p>
+            <h3 class="product-title">Cowork / Estudio creativo</h3>
+            <p class="product-description">
+              Un lugar para mostrar tus espacios, planes mensuales,
+              fotos de oficinas y beneficios para freelancers.
+            </p>
+            <p class="product-price">Ejemplo: membresías desde $40.000</p>
+            <button class="btn btn-full">Ver demo de cowork</button>
+          </article>
+        </div>
+
+        <!-- PAGINACIÓN (DECORATIVA) -->
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <span class="page-separator">…</span>
+          <button class="page-btn">10</button>
+          <button class="page-btn">&rarr;</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- BENEFICIOS -->
+    <section class="benefits" id="beneficios">
+      <div class="benefit">
+        <div class="benefit-icon">⚡</div>
+        <h3>Rápida de adaptar</h3>
+        <p>Solo cambiás colores, logos e imágenes y ya tenés una web lista para mostrar.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📱</div>
+        <h3>Responsiva</h3>
+        <p>Se ve bien en celular, tablet y escritorio. Ideal para compartir por WhatsApp.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🧩</div>
+        <h3>Versátil</h3>
+        <p>Funciona para venta de productos, servicios, reservas o portfolio.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">💻</div>
+        <h3>Perfecta para GitHub</h3>
+        <p>Solo subís estos archivos a GitHub Pages y ya tenés tu demo online.</p>
+      </div>
+    </section>
+
+    <!-- MAPA / UBICACIÓN (PLACEHOLDER) -->
+    <section class="map-section" id="mapa">
+      <div class="map-info">
+        <h2>¿Tenés un local físico?</h2>
+        <p>
+          En esta sección podés embeber un mapa de Google Maps con la ubicación
+          de tu emprendimiento, horarios y formas de contacto.
+        </p>
+        <p>
+          Es un excelente lugar para que tus clientes ubiquen tu negocio y lleguen
+          directamente usando el GPS.
+        </p>
+      </div>
+      <div class="map-placeholder">
+        <span>Aquí podés embeber un mapa de Google Maps</span>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3>¿Querés una web así para tu emprendimiento?</h3>
+          <p>
+            Esta plantilla es solo una base. Podés personalizar colores, tipografías,
+            secciones y conectarla con formularios, WhatsApp o pasarelas de pago.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Secciones</h3>
+          <ul>
+            <li><a href="#ejemplos">Ejemplos</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#mapa">Mapa / Local</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul>
+            <li>✉️ contacto@tunegocio.com</li>
+            <li>📍 Buenos Aires, Argentina</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Créditos</h3>
+          <ul>
+            <li>Fotos: Unsplash (uso libre)</li>
+            <li>Plantilla: Lucas Rimbano</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 TuNegocio.Web — Plantilla para emprendimientos</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
