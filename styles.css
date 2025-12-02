@@ -224,7 +224,7 @@ body {
   margin-top: 1.5rem;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background-image: url("https://images.pexels.com/photos/37347/pexels-photo.jpg");
+  background-image: url("images/negocio.jpg");
   background-size: cover;
   background-position: center;
   min-height: 220px;
@@ -460,6 +460,11 @@ body {
   font-size: 0.85rem;
   color: var(--color-muted);
   margin-bottom: 0.45rem;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-category {
@@ -712,4 +717,79 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* --------------------------------------------------------
+   BOTONES FLOTANTES (WhatsApp + Ir arriba)
+-------------------------------------------------------- */
+.floating-btn {
+  position: fixed;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+  z-index: 999;
+}
+
+/* WhatsApp abajo a la derecha */
+.floating-whatsapp {
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Ir arriba abajo a la izquierda */
+.floating-top {
+  bottom: 20px;
+  left: 20px;
+  background-color: #3c3622;
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+/* Cuando se muestra el botón de ir arriba */
+.floating-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --------------------------------------------------------
+   BOTÓN FLOTANTE WHATSAPP (SVG)
+-------------------------------------------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+/* Tamaño y color del ícono SVG */
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Efecto hover */
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+  transform: translateY(-1px);
 }
