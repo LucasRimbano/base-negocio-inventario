@@ -1215,3 +1215,38 @@ body {
     padding: 1.15rem 1.1rem 1.25rem;
   }
 }
+@media (max-width: 640px) {
+  .hero-servicios {
+    min-height: 0; /* que no obligue a ser tan alta */
+  }
+
+  .hero-servicios .hero-content {
+    padding: 1.4rem 1.2rem 1.8rem;
+  }
+
+  .hero-servicios h1 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .hero-servicios .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .hero-servicios .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-servicios .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-servicios .hero-tag {
+    font-size: 0.78rem;
+  }
+}
